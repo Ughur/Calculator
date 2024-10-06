@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.digital {
+  font-family: "DS-Digital", sans-serif;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-md p-2 shadow-lg transition-all hover:bg-amber-400 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply hover:bg-amber-600 active:scale-95 transition-all rounded-md bg-[#313632] p-2 text-white shadow-lg;
+  }
+}
